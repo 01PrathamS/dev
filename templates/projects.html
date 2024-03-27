@@ -1,0 +1,14 @@
+<div class="border border-bottom-0 row" style="margin-bottom:1px;padding-bottom:4px;">
+  <div class="col-9">
+    <h3 style="color:rgb(120, 120, 120); margin-bottom:4px;"><b>{{ project.title }}</b></h3>
+    <div>
+      <h4 style="margin-top:0;margin-bottom:0;"><b>Description:</b> {{ project.description }}</h4>
+      {% if 'status' in project %}
+      <h4 style="margin-top:0;margin-bottom:0;"><b>Status:</b> {{ project.status }}</h4>
+      {% endif %}
+    </div>
+  </div>
+  <div class="col-3">
+    <button type="button" class="btn btn-outline-primary">Github</button>
+  </div>
+</div>
